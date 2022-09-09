@@ -118,6 +118,26 @@ Although according to the theory, a value higher than one for the parameter λ i
 The figure below shows the diagram of MAP and P@20 resulting from the test of different values ​​for the λ parameter.
 
  ![Tokenization](https://github.com/varaste/Smoothing-Retrieval-Function-and-Pseudo-Relevance-Feedback/blob/main/assets/JM MAP And P@20.png)
+ 
+ ## Second method: ‌Dirichlet with parameter λ
+
+With the Dirichlet method, we first perform the recovery with the default value μ on the set of queries from 51 to 100 with a value of 1000 for the Requested number and obtain the values of MAP and P@20. In the following, we change µ by trial and error between 0 and 30000, first with long steps and note the values every time, and if we see an improvement compared to the default state, we try relative values with smaller steps to get Let us reach the optimal value.
+
+The default value of the μ parameter is 1500. In this section, we tested the values in these areas and a margin from above and below these areas, first with long steps and then with short steps, and the optimal value for the questionnaires 51 to 100 for the μ parameter was found to be 3450. Of course, in this value, the size of the MAP evaluation criterion was slightly reduced compared to the default state, but the P@20 evaluation criterion improved significantly.
+
+In the figure below, you can see the diagram of MAP and P@20 resulting from the test of different values for the μ parameter:
+
+ ![Tokenization](https://github.com/varaste/Smoothing-Retrieval-Function-and-Pseudo-Relevance-Feedback/blob/main/assets/JM.png)
+
+ ## Third method: ‌Additive Smoothing
+
+In this part, with the Additive Smoothing method, we first perform the retrieval with the default value of theta on the query set from 51 to 100 with the value of 1000 for the number of Requested, and get the values of MAP and P@20. In the following, we change theta between 0 and 10 by trial and error, first with long steps and note the values every time, and if we see an improvement compared to the default state, we try close values with smaller steps to Let us reach the optimal value.
+
+ ![Tokenization](https://github.com/varaste/Smoothing-Retrieval-Function-and-Pseudo-Relevance-Feedback/blob/main/assets/JM.png)
+
+
+
+
 
 
 
