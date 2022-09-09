@@ -105,7 +105,7 @@ Documents Indexed: 163912.
 In the JM method, we perform a linear interpolation between MLE and CLM, which is controlled by the Landa parameter. λ ∈ [0, 1]. Therefore, the larger the Landa value is set in this method, the more important the look at the language model set or background. The smaller the Landa value, the more important the current document is. So by mixing the two distributions, we achieve the goal of assigning a non-zero probability to the unseen words in the document we are currently scoring.
 Below and in the formula of the JM method, you can see the details of the linear interpolation method:
  
- ![Tokenization](https://github.com/varaste/Document-Ranking-with-Galago/blob/main/assets/Arya%20Varaste-Tokenization.png)
+ ![Tokenization](https://github.com/varaste/Smoothing-Retrieval-Function-and-Pseudo-Relevance-Feedback/blob/main/assets/JM.png)
  
 Now, with the JM method, we first perform the recovery with the default value of λ on the query set from 51 to 100 with the value of 1000 for the number of Requested and get the values ​​of MAP and P@20. In the following, we change λ by trial and error first with long steps and note the values ​​every time, and if we see an improvement compared to the default state, we try other values ​​with smaller steps to reach the optimal value.
 
@@ -117,7 +117,7 @@ Although according to the theory, a value higher than one for the parameter λ i
 
 The figure below shows the diagram of MAP and P@20 resulting from the test of different values ​​for the λ parameter.
 
- ![Tokenization](https://github.com/varaste/Document-Ranking-with-Galago/blob/main/assets/Arya%20Varaste-Tokenization.png)
+ ![Tokenization](https://github.com/varaste/Smoothing-Retrieval-Function-and-Pseudo-Relevance-Feedback/blob/main/assets/JM MAP And P@20.png)
 
 
 
