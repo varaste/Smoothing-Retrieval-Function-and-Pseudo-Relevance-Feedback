@@ -36,11 +36,11 @@ Dataset used in this project consists of three parts:
 
 Collections of news articles are in TREC format. Each document contains several fields:
 
-- **OCNO**: ID of each document
+- **OCNO**: ID of each document.
 
-- **Head**: The title of the document
+- **Head**: The title of the document.
 
-- **Text**: The text of the document
+- **Text**: The text of the document.
 
 ### Queries
 
